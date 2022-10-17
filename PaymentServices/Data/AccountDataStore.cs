@@ -14,14 +14,14 @@ namespace PaymentServices.Data
                 : null;
         }
 
-        public void UpdateAccount(Account _account)
+        public void UpdateAccount(Account account)
         {
-            if (!_accounts.ContainsKey(_account.AccountNumber))
+            if (!_accounts.ContainsKey(account.AccountNumber))
             {
                 return;
             }
 
-            _accounts[_account.AccountNumber] = _account;
+            _accounts[account.AccountNumber] = account;
         }
     }
 }
